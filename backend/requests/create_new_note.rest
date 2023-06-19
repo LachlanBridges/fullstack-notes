@@ -1,0 +1,25 @@
+POST http://localhost:3001/api/notes/ HTTP/1.1
+content-type: application/json
+
+{
+    "content": "VS code rest client is pretty handy",
+    "important": true
+}
+###
+POST http://localhost:3001/api/notes/ HTTP/1.1
+content-type: application/json
+
+{
+    "random": "A note using the wrong fields",
+    "wow": true
+}
+
+###
+POST http://localhost:3001/api/notes/ HTTP/1.1
+content-type: application/json
+
+{
+    "content": "A note with extra fields",
+    "random": "using random fields",
+    "wow": true
+}
